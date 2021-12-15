@@ -35,7 +35,31 @@ def main():
                     connected = True
 
             # TODO: Game loop
+            # 
+            # send first cards with ui
+            #
+            # def choice
+            #                     1. get 1 more card          2. Ready
+            # (1) send 1 card to the player, then update information of second player about player 1's new card
+            # (2) Next player
 
+            # after dealer choice, send dealer card to players
+
+            # again def choice 
+            # if someone didnt loose after card pick, or just ready and have <= 21.
+            # send game result
+
+            # sart new game by sending new cards.
+
+            
+
+def send_first_cards(player_contact, game):
+    pass
+
+
+def game_choice(player_contact, game):
+    pass
+           
 
 def get_clients_info(connection, player_contact):
     connection.send("Введите свое имя:".encode())
@@ -43,5 +67,5 @@ def get_clients_info(connection, player_contact):
     player_contact.append({"conn": connection, "name": client_name})
 
 
-if name == "main":
+if __name__ == "__main__":
     main()
