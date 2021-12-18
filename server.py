@@ -36,7 +36,6 @@ def main():
                         thread.start()
                     connected = True
 
-<<<<<<< HEAD
             else:
                 game = Game(player_contact[0]["name"], player_contact[1]["name"])
                 
@@ -117,34 +116,7 @@ def send_first_cards(player_contact, game):
 
 
 def game_choice(player_contact, game):
-    
-=======
-            # TODO: Game loop
-            # 
-            # send first cards with ui
-            #
-            # def choice
-            #                     1. get 1 more card          2. Ready
-            # (1) send 1 card to the player, then update information of second player about player 1's new card
-            # (2) Next player
-
-            # after dealer choice, send dealer card to players
-
-            # again def choice 
-            # if someone didnt loose after card pick, or just ready and have <= 21.
-            # send game result
-
-            # sart new game by sending new cards.
-
-            
-
-def send_first_cards(player_contact, game):
     pass
-
-
-def game_choice(player_contact, game):
-    pass
->>>>>>> db2d54f0e5e610cc981f18cb86b0ff25ec02d342
            
 
 def get_clients_info(connection, player_contact):
